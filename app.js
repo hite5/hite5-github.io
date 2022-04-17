@@ -2,7 +2,7 @@ const expresss = require('express');
 const app = expresss();
 
 app.get('/', (req, res) => {
-    res.sendFile('./templates/homePage.html', {root : __dirname} )
+    res.sendFile('./index.html', {root : __dirname} )
 });
 
 app.get('/api/', (req, res) => {
